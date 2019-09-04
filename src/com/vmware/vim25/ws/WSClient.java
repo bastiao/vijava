@@ -66,6 +66,7 @@ final public class WSClient
   private final static String SOAP_ACTION_V50 = "urn:vim25/5.0";
   private final static String SOAP_ACTION_V51 = "urn:vim25/5.1";
   private final static String SOAP_ACTION_V55 = "urn:vim25/5.5";
+  private final static String SOAP_ACTION_V69 = "urn:vim25/6.9";
   
   private URL baseUrl = null;
   HttpURLConnection postCon;
@@ -320,9 +321,14 @@ final public class WSClient
     {
       soapAction = SOAP_ACTION_V55;
     }
+
+    else if("6.9".equals(apiVersion))
+    {
+      soapAction = SOAP_ACTION_V69;
+    }
     else
     { //always defaults to latest version 
-      soapAction = SOAP_ACTION_V55;
+      soapAction = SOAP_ACTION_V69;
     }
   }
   
