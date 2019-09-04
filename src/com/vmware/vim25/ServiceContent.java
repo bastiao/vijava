@@ -73,6 +73,26 @@ public class ServiceContent extends DynamicData {
   public ManagedObjectReference localizationManager;
   public ManagedObjectReference storageResourceManager;
   public ManagedObjectReference guestOperationsManager;
+  public ManagedObjectReference overheadMemoryManager;
+  public ManagedObjectReference certificateManager;
+  public ManagedObjectReference ioFilterManager;
+  public ManagedObjectReference vStorageObjectManager;
+  public ManagedObjectReference hostSpecManager;
+  public ManagedObjectReference cryptoManager;
+  public ManagedObjectReference healthUpdateManager;
+  public ManagedObjectReference failoverClusterConfigurator;
+  public ManagedObjectReference failoverClusterManager;
+  public ManagedObjectReference storageQueryManager;
+
+
+
+  public ManagedObjectReference getOverheadMemoryManager() {
+    return overheadMemoryManager;
+  }
+
+  public void setOverheadMemoryManager(ManagedObjectReference overheadMemoryManager) {
+    this.overheadMemoryManager = overheadMemoryManager;
+  }
 
   public ManagedObjectReference getRootFolder() {
     return this.rootFolder;
