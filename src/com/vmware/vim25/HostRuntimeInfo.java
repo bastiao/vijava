@@ -49,6 +49,8 @@ public class HostRuntimeInfo extends DynamicData {
   public HostRuntimeInfoNetworkRuntimeInfo networkRuntimeInfo;
   public HostVFlashManagerVFlashResourceRunTimeInfo vFlashResourceRuntimeInfo;
   public Long hostMaxVirtualDiskCapacity;
+  public String inQuarantineMode;
+  public String cryptoState;
 
   public HostSystemConnectionState getConnectionState() {
     return this.connectionState;
