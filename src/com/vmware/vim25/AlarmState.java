@@ -45,6 +45,7 @@ public class AlarmState extends DynamicData {
   public Boolean acknowledged;
   public String acknowledgedByUser;
   public Calendar acknowledgedTime;
+  public int eventKey;
 
   public String getKey() {
     return this.key;

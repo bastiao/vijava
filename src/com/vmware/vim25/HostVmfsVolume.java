@@ -37,6 +37,8 @@ package com.vmware.vim25;
 @SuppressWarnings("all")
 public class HostVmfsVolume extends HostFileSystemVolume {
   public int blockSizeMb;
+  public int blockSize;
+  public int unmapGranularity;
   public int maxBlocks;
   public int majorVersion;
   public String version;
@@ -46,6 +48,7 @@ public class HostVmfsVolume extends HostFileSystemVolume {
   public HostForceMountedInfo forceMountedInfo;
   public Boolean ssd;
   public Boolean local;
+  public String unmapPriority;
 
   public int getBlockSizeMb() {
     return this.blockSizeMb;

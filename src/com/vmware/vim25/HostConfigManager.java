@@ -68,6 +68,26 @@ public class HostConfigManager extends DynamicData {
   public ManagedObjectReference graphicsManager;
   public ManagedObjectReference vsanInternalSystem;
 
+  public ManagedObjectReference getvFlashManager() {
+    return vFlashManager;
+  }
+
+  public void setvFlashManager(ManagedObjectReference vFlashManager) {
+    this.vFlashManager = vFlashManager;
+  }
+
+  public ManagedObjectReference getOverheadMemoryManager() {
+    return overheadMemoryManager;
+  }
+
+  public void setOverheadMemoryManager(ManagedObjectReference overheadMemoryManager) {
+    this.overheadMemoryManager = overheadMemoryManager;
+  }
+
+  public ManagedObjectReference overheadMemoryManager;
+
+
+
   public ManagedObjectReference getCpuScheduler() {
     return this.cpuScheduler;
   }

@@ -78,7 +78,7 @@ public class InventoryNavigator
 		  "5.0"       vSphere 5.0
 		  "6.0"       vSphere 6.0
       ******************************************************/
-			if(ai.apiVersion.startsWith("4") || ai.apiVersion.startsWith("5") || ai.apiVersion.startsWith("6"))
+			if(ai.apiVersion.startsWith("4") || ai.apiVersion.startsWith("5") || ai.apiVersion.startsWith("6")|| ai.apiVersion.startsWith("7"))
 			{
 			  selectionSpecs = PropertyCollectorUtil.buildFullTraversalV4();
 			}

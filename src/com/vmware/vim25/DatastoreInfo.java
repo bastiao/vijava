@@ -42,6 +42,7 @@ public class DatastoreInfo extends DynamicData {
   public long freeSpace;
   public long maxFileSize;
   public Long maxVirtualDiskCapacity;
+  public Long maxMemoryFileSize;
   public Calendar timestamp;
   public String containerId;
 
