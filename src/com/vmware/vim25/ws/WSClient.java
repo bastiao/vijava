@@ -70,6 +70,9 @@ final public class WSClient
   private final static String SOAP_ACTION_V65 = "urn:vim25/6.5";
   private final static String SOAP_ACTION_V67 = "urn:vim25/6.7.2";
   private final static String SOAP_ACTION_V69 = "urn:vim25/6.9.1";
+
+  private final static String SOAP_ACTION_V70 = "urn:vim25/7.0.0.0";
+
   
   private URL baseUrl = null;
   HttpURLConnection postCon;
@@ -203,7 +206,7 @@ final public class WSClient
     postCon.setDoOutput(true);
     postCon.setDoInput(true);
     postCon.setRequestProperty(SOAP_ACTION_HEADER, SOAP_ACTION_V55);
-    System.out.println("SOAP_ACTION_V67="+SOAP_ACTION_V55);
+    //System.out.println("SOAP_ACTION_V67="+SOAP_ACTION_V55);
     postCon.setRequestProperty("Content-Type", "text/xml; charset=utf-8");
     
     if(cookie!=null)
@@ -329,6 +332,10 @@ final public class WSClient
     else if("6.9".equals(apiVersion))
     {
       soapAction = SOAP_ACTION_V67;
+    }
+    else if("7.0".equals(apiVersion))
+    {
+      soapAction = SOAP_ACTION_V70;
     }
     else
     { //always defaults to latest version 
